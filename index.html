@@ -1,163 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mozilla splash page</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <style>
-      /* header and body setup */
+    <title>Bodega Carazas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    <link href="style_try1.css" rel="stylesheet">
 
-      html {
-        font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
-      }
-
-      body {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-      }
-
-      /* Header styling */
-
-      header {
-        height: 150px;
-      }
-
-      header img {
-        width: 100px;
-        position: absolute;
-        right: 32.5px;
-        top: 32.5px;
-      }
-
-      h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-      }
-
-      /* main section and video styling */
-
-      main {
-        background: #ccc;
-      }
-
-      article {
-        padding: 20px;
-      }
-
-      h2 {
-        margin-top: 0;
-      }
-
-      p {
-        line-height: 2;
-      }
-
-      iframe {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 100%;
-      }
-
-      /* further info links */
-
-      .further-info {
-        clear: left;
-        padding: 40px 0;
-        background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
-      }
-
-      .further-info a {
-        width: 25%;
-        display: block;
-        float: left;
-      }
-
-      .further-info img {
-        max-width: 100%;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      /* Red panda image */
-
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
-    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
   </head>
+
   <body>
     <header>
-      <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-      <img src="originals/firefox_logo-only_RGB120.png" title="firefox">
-
+      <h1>Bodega Carazas</h1>
+      <img src="imagenes/bodega_head.png " alt="a simple dove logo">
     </header>
-
+    <nav>
+      <ul>
+        <li><span><a  href=#presentacion> Quienes somos</a></span></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#ubicacion">Ubicacion</a></li>
+      </ul>
+    </nav>
+      
     <main>
       <article>
-        <!-- insert iframe from youtube -->
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>Rocking the free web</h2>
+        <div class="presentacion">
+          <h2 id=presentacion>Quienes somos?</h2>
 
-        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+          <p>
+            Somos la bodega Carazas estamos dispuestos a llevarte los mejores productos directo a tu hogar.<br>
+            Que esperas para ponerte en contacto con nosotros a nuestro telefono <strong><a href="https://wa.me/934241974">934241974</a></strong>
+          </p>
+        </div>
+        
 
-        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+        
+        <div class="productos">
+          <h2 id=productos>Productos</h2>
+          <ul>
+            <li>  
+            <a href=#>
+              <figure>
+                <img src="imagenes/frutas.jpg" width="200px" height="200px" title="Frutas">
+                <figcaption>Frutas</figcaption>
+              </figure>
+            </a>
+            </li>
+            <li>
+              <a href=#>
+                <figure>
+                  <img src="imagenes/verduras.jpg" width="200px" height="200px" title="Verduras">
+                  <figcaption>Verduras</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href=#>
+                <figure>
+                  <img src="imagenes/abarrotes.jpg" width="200px" height="200px" title="Abarrotes">
+                  <figcaption>Abarrotes</figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+          
+          
+          <div class="clearfix"></div>
+          
+        </div>
+        
+         
+        <div class="servicios">
+          <h2 id=servicios>Servicios</h2>
+
+          <p>
+            Contamos con agente Kasnet donde puede realizar las siguientes operaciones:
+          </p>
+          <ul>
+          
+            <li>Pago de agua </li>
+            <li>Pago de luz</li>
+            <li>Pago de prestamos</li>
+            <li>Depositos</li>
+            <li>Retiros</li>
+            <li>Y mucho más</li>
+          </ul>
+          <p>Trabajamos con los siguientes bancos</p>
+          <ul>
+            <li>Scotiabank</li>
+            <li>Mibanco</li>
+            <li>Banco Pichincha</li>
+            <li>Banco GNB</li>
+            <li>Todas las cajas</li>
+          </ul>
+          
+        </div>  
+        <div class="ubicacion">
+          <h2 id=ubicacion>Ubicacion</h2>
+
+          <p>
+            Nos puedes encontrar en Jr Iquique 685
+          </p>
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.0033959322817!2d-77.04332399209757!3d-12.056930009746464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c494eaf7ed%3A0x8f7a8c1b433e0f47!2sIquique%20659%2C%20Bre%C3%B1a%2015082!5e0!3m2!1ses-419!2spe!4v1642464687570!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+        
       </article>
-
-      <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img  srcset="originals/firefox_logo-only_RGB120.png 120w,
-                        originals/firefox_logo-only_RGB400.png 400w"
-                sizes="(max-width:500px) 120px,
-                        400px" 
-          
-                src="originals/firefox_logo-only_RGB400.png" alt="logo de firefox">
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img  srcset="originals/mozilla-dinosaur-head120.png 120w,
-                        originals/mozilla-dinosaur-head400.png 400w"
-                sizes="(max-width:500px) 120px,
-                        400px" 
-          
-                src="originals/mozilla-dinosaur-head400.png" alt="dinosaurio rojo">
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img  srcset="originals/firefox-addons120.jpg 120w,
-                        originals/firefox-addons400.jpg 400w"
-                sizes="(max-width:500px) 120px,
-                        400px" 
-          
-                src="firefox-addons400.jpg" alt="noticias de firefox">
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img src="originals/mdn.svg">
-          
-        </a>
-        <div class="clearfix"></div>
-      </div>
-
-      <div class="red-panda">
-        <!-- insert picture element -->
-        <picture>
-          <source media="(max-width: 599px)" srcset="originals/red-panda600.jpg">
-          <source media="(min-width: 600px)" srcset="originals/red-panda1200.jpg">
-           <img src="originals/red-panda1200.jpg" alt="panda rojo">
-        </picture>
-      </div>
-
+      
     </main>
+      
+    <footer>
+      <p>Contactanos al Whatsapp</p>
+
+      <p>Escribenos directamente aqui <a href="https://wa.me/934241974"> 934241742 </p>
+
+    </footer>
+      
   </body>
 </html>
